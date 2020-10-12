@@ -1,4 +1,14 @@
 import axios from "axios"
+import { NEW_CONNECTOR_JHGJHG564654654646_54656465BHGFHGFGH_TOKEN } from "react-native-dotenv"
+const newConnectorjhgjhgbhgfhgfgh = axios.create({
+  baseURL:
+    "https://crowdbotics-slack-dev.herokuapp.com/dashboard/app/13143/storyboard/12110/",
+  headers: {
+    Accept: "application/json",
+    "Content-Type": "application/json",
+    Authorization: `Bearer ${NEW_CONNECTOR_JHGJHG564654654646_54656465BHGFHGFGH_TOKEN}`
+  }
+})
 const mobileoctAPI = axios.create({
   baseURL: "https://mobile-012-oct-dev-13143.botics.co/",
   headers: { Accept: "application/json", "Content-Type": "application/json" }
